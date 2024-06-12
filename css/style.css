@@ -1,6 +1,7 @@
 .container{
     width: min(100%, 1440px);
     margin: auto;
+    padding-top: 138.67px;
 }
 /* header */
 header{
@@ -9,7 +10,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+    position: fixed;
+    max-width: inherit;
+    width: inherit;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 1;
 }
 .header_ul{
     display: flex;
@@ -119,16 +126,55 @@ footer{
     background-color: #372D23;
     width: 1440px;
     height: 196px;
-    
+    padding: 32px 80px;
+    display: flex;
+    justify-content: space-between;
 }
 h5{
     font-family: Inter;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
-    color: white    ;
+    color: white;
+    margin-bottom: 16px;
 
 }
-.footer_li{
+.footer_li_link{
     color: #FCC21B;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}    
+.middle_li{
+    margin-block: 8px;
 }
+.footer_article{
+    /* background-color: blueviolet; */
+    width: 264px;
+    height: 132px;
+}
+.footer_article_2{
+    /* background-color: blue; */
+    width: 160px;
+    height: 68px;
+}
+.footer_h5{
+    color: white;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    
+}
+.fa-brands{
+    color: #FCC21B;
+    font-size: 24px;
+}
+.fa-linkedin{
+    margin-inline: 12px;
+}
+.fa-tiktok{
+    margin-left: 12px;
+}
+/* დაშორება column gap - ით უნდა გემეკეთებინა აიქონებს შორის? */
